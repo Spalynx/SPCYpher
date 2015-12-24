@@ -34,9 +34,16 @@ class SPCypher:
             converted += chr(temp)
         return converted
 
+    def setA(self, A = 3):
+        self.__A = A;
+    def setB(self, B = 6):
+        self.__B = B;
 
-
-
+    def getA():
+        return __A;
+    def getB():
+        return __B;
+        
 
 def main():
     """Basic IO for testing"""
