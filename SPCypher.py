@@ -1,7 +1,7 @@
 import string
 """
 #  Name: Spalynx
-#  Ver : 0.1
+#  Ver : 0.2
 #  Date: 12/23/15
 """
 class SPCypher:
@@ -50,6 +50,7 @@ def main():
     sp = SPCypher();
     conv = input("ToConvert:  ")
     print("Converted: ", sp.toCypher(conv))
+    wait = input("PRESS <enter> TO CONTINUE.")
 
 if __name__ == '__main__':
     print ("%s: Running library as main." % __file__); main();

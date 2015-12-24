@@ -1,4 +1,5 @@
 import tkinter as tk
+import time
 import SPCypher
 
 class SPCyGui(tk.Frame):
@@ -15,7 +16,7 @@ class SPCyGui(tk.Frame):
         self.QUIT = tk.Button(bottom_fr)
 
         #setting attributes of compute and quit buttons
-        self.compute["text"] = "Convert:"
+        self.compute["text"] = "Convert"
         self.compute["command"] = self.cypher
         self.QUIT["text"] ="QUIT"
         self.QUIT["fg"] = "red"
@@ -79,4 +80,4 @@ root.resizable(width=0, height=0)
 root.geometry('{}x{}'.format(300,200))
 app = SPCyGui(master=root)
 app.mainloop()
-
+time.sleep(2)
